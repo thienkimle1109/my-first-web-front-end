@@ -1,0 +1,5 @@
+  <app-header [hidden]="isShowHeader"></app-header>
+  <div class="hidden">
+  <router-outlet></router-outlet>
+  </div>
+  <div *ngIf="isShow" class="hidden" (click)="gotoTop()"></div>
